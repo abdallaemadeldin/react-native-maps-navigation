@@ -16,27 +16,27 @@ export const defaultThemeSettings = {
      */
     Markers: {
         [MarkerTypes.ORIGIN]: {
-            icon: NavigationIcons.place,
-            color: '#77dd77',
-            fontSize: 40,
+            // icon: NavigationIcons.place,
+            // color: '#77dd77',
+            // fontSize: 0,
         },
 
         [MarkerTypes.DESTINATION]: {
-            icon: NavigationIcons.place,
-            color: '#ff4500',
-            fontSize: 40,
+            // icon: NavigationIcons.place,
+            // color: '#ff4500',
+            // fontSize: 40,
         },
 
         [MarkerTypes.POSITION_DOT]: {
             icon: NavigationIcons.compassDot,
             color: '#387bc1',
-            fontSize: 30,
+            fontSize: 20,
         },
 
         [MarkerTypes.POSITION_ARROW]: {
             icon: NavigationIcons.navigate,
-            size: 100,
-            fontSize: 80,
+            size: 20,
+            fontSize: 20,
             color: '#ffffff',
             backgroundColor: '#387bc1'
         },
@@ -46,13 +46,13 @@ export const defaultThemeSettings = {
         [PolylineTypes.ROUTE]: {
             fillColor: '#00b3fd',
             strokeColor: '#387bc1',
-            strokeWidth: 18,
-            borderWidth: 4,
+            strokeWidth: 4,
+            borderWidth: 2,
         },
         [PolylineTypes.ROUTE_ALTERNATIVE]: {
             fillColor: '#cccccc',
             strokeColor: '#a0a0a0',
-            strokeWidth: 18,
+            strokeWidth: 4,
             borderWidth: 4,
         },
     }
@@ -65,8 +65,7 @@ export const defaultThemeSettings = {
  * @param theme
  * @returns {*}
  */
-const connectTheme = (theme) =>
-{
+const connectTheme = (theme) => {
     return Object.assign({}, defaultThemeSettings, theme);
 };
 
